@@ -7,7 +7,7 @@ M.setup = function(opts)
 			single_file_support = true,
 		},
 	}
-	require("lspconfig").jayvee_ls.setup({ opts })
+	require("lspconfig").jayvee_ls.setup(opts)
 end
 
 return M
