@@ -6,6 +6,7 @@ M.setup = function(opts)
 			cmd = { "jayvee-language-server", "--stdio" },
 			filetypes = { "jayvee" },
 			single_file_support = true,
+			root_dir = require("lspconfig.util").find_git_ancestor,
 		},
 	}
 	require("lspconfig").jayvee_ls.setup(opts)
