@@ -7,7 +7,7 @@ if exists("b:current_syntax")
   finish
 endif
 
-syn keyword jayveeKeyword and block blocktype builtin ceil cell column composite constraint constraints constrainttype false floor from in input iotype length matches not oftype on or output pipeline pow property range replace requires root round row sqrt to transform true value valuetype with xor uses
+syn keyword jayveeKeyword and as asBoolean asDecimal asInteger asText block blocktype builtin ceil cell column composite constraint constraints constrainttype false floor from in input iotype length lowercase matches not oftype on or output pipeline pow property publish range replace requires root round row sqrt to transform true uppercase use value valuetype with xor
 
 
 syn match jayveeLineComment /\/\/.*/
