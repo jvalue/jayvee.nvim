@@ -1,7 +1,10 @@
+# Jayvee.nvim
 Features:
   - Associates the `.jv` extension with the `jayvee` filetype
   - Enables very basyic vim syntax highlighting for jayvee files
   - Configures the jayvee-language-server using [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
+
+If you use the neovim nightly, you may want to look at the [nightly](https://github.com/jvalue/jayvee.nvim/tree/nightly) branch
 
 This plugin does NOT:
   - provide the language-server itself
