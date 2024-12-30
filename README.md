@@ -15,23 +15,23 @@ Features:
 # Installation
 ## [lazy.nvim](https://github.com/folke/lazy.nvim)
 ```lua
-  {
+{
     'jvalue/jayvee.nvim',
     branch = 'nightly',
-    opts = {
-        -- see `:help vim.lsp.Config`
-    },
-  },
+    config = function()
+        -- See `:help lsp-config` if you require a custom configuration
+        vim.lsp.enable("jayvee_ls")
+    end
+},
 ```
 ## [mini.deps](https://github.com/echasnovski/mini.deps)
 ```lua
-  MiniDeps.add({
+MiniDeps.add({
     source = "jvalue/jayvee.nvim",
     checkout = "nightly",
     monitor = "nightly",
-  })
+})
 
-  require("jayvee").setup(
-       -- see `:help vim.lsp.Config`
-  )
+-- See `:help lsp-config` if you require a custom configuration
+vim.lsp.enable("jayvee-ls")
 ```
