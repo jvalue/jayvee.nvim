@@ -19,11 +19,6 @@ Features:
     dependencies = {
       'neovim/nvim-lspconfig',
     },
-    main = 'jayvee',
-    init = function(_)
-      vim.filetype.add { extension = { jv = 'jayvee' } }
-    end,
-    ft = 'jayvee',
     opts = {
         -- standard nvim-lspconfig options
     },
