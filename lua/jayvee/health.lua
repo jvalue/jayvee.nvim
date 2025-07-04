@@ -1,7 +1,7 @@
 local M = {}
 function M.check()
 	vim.health.start("jayvee.nvim")
-	local lsp_config = vim.lsp.config["jayvee-language-server"]
+	local lsp_config = vim.lsp.config["jayvee_ls"]
 	if not lsp_config then
 		vim.health.error(
 			"No configuration found for `jayvee-language-server`",
